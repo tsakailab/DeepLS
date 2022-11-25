@@ -10,7 +10,7 @@ Our method can build up a well-generalized model from only a few dozen of unanno
 
 ## available codes
 - [demo programs](./demo)
-  - [applications for background subtraction](./demo_background_subtraction.ipynb)
+  - [applications for background subtraction](./demo/demo_background_subtraction.ipynb)
     - Airport dataset [Li+04]
     - including comparison to RPCA [Candes+09]
   - [applications for cell segmentation](./demo_cell_segmentation.ipynb)
