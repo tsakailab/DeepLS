@@ -10,10 +10,10 @@ Our method can build up a well-generalized model from only a few dozen of unanno
 
 ## available codes
 - [demo programs](./demo)
-  - [applications to background subtraction](./demo/demo_background_subtraction.ipynb)
+  - [application to background subtraction](./demo/demo_background_subtraction.ipynb)
     - Airport dataset [Li+04]
     - including comparison to RPCA [Candes+09]
-  - [applications to cell segmentation](./demo/demo_cell_segmentation.ipynb)
+  - [application to cell segmentation](./demo/demo_cell_segmentation.ipynb)
     - [ISBI 2014 dataset](https://cs.adelaide.edu.au/~carneiro/isbi14_challenge/)
     - ~~including introduction of anisotropic total variation for loss function~~
 
