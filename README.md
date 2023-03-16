@@ -18,9 +18,10 @@ Our method can build up a well-generalized model from only a few dozen of unanno
     - ~~including introduction of anisotropic total variation for loss function~~
 
 ## Paper
-incoming...
+"Unsupervised Deep Learning for Online Foreground Segmentation Exploiting Low-Rank and Sparse Priors"
+2022 International Conference on Digital Image Computing: Techniques and Applications (DICTA)
+https://ieeexplore.ieee.org/document/10034581
 
 ## Citation
 incoming...
 
-## Acknowledgements
