@@ -9,19 +9,33 @@ Our method can build up a well-generalized model from only a few dozen of unanno
 ![](model_architecture.png)
 
 ## available codes
-- [demo programs](./demo)
-  - [application to background subtraction](./demo/demo_background_subtraction.ipynb)
-    - Airport dataset [Li+04]
-    - including comparison to RPCA [Candes+09]
-  - [application to cell segmentation](./demo/demo_cell_segmentation.ipynb)
-    - [ISBI 2014 dataset](https://cs.adelaide.edu.au/~carneiro/isbi14_challenge/)
-    - ~~including introduction of anisotropic total variation for loss function~~
+[demo programs](./demo)
+- [Application to background subtraction](./demo/demo_background_subtraction.ipynb)
+  - Airport dataset [Li+04]
+  - including comparison to RPCA [Candes+09]
+- [Application to cell segmentation](./demo/demo_cell_segmentation.ipynb)
+  - [ISBI 2014 dataset](https://cs.adelaide.edu.au/~carneiro/isbi14_challenge/)
+  - including introduction of [anisotropic total variation](https://en.wikipedia.org/wiki/Total_variation_denoising) for loss function
 
 ## Paper
-"Unsupervised Deep Learning for Online Foreground Segmentation Exploiting Low-Rank and Sparse Priors"
+"Unsupervised deep learning for online foreground segmentation exploiting low-rank and sparse priors"
 2022 International Conference on Digital Image Computing: Techniques and Applications (DICTA)
 https://ieeexplore.ieee.org/document/10034581
 
+Incoming!:
+Background subtraction approach to unsupervised cell segmentation toward excluding spurious featues in degraded cytology slides
+2023 IEEE 20th International Symposium on Biomedical Imaging (ISBI)
+
 ## Citation
-incoming...
+Low-rank and sparse loss:
+```bib
+@INPROCEEDINGS{takeda22,
+  author={Takeda, Keita and Fujiwara, Kohei and Sakai, Tomoya},
+  booktitle={2022 International Conference on Digital Image Computing: Techniques and Applications (DICTA)}, 
+  title={Unsupervised deep learning for online foreground segmentation exploiting low-rank and sparse priors}, 
+  year={2022},
+  pages={1-7},
+  doi={10.1109/DICTA56598.2022.10034581}}
+```
+
 
