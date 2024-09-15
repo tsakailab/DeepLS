@@ -8,15 +8,20 @@ Notably, once trained, the DeepLS model gains the capacity to extract learned sp
 ![](model_architecture.png)
 
 ## Applications
+[demo programs](./demo)
+
+
 
 *   **Learning foreground objects from surveillance video**: DeepLS can effectively learn and separate foreground objects from the background in video surveillance tasks, even with changes in viewpoints or background conditions. Once trained on a set of images, the DeepLS model can detect the learned foreground objects in new images without retraining. This is a significant advantage over traditional methods like RPCA, which require recomputation for each new image.
 
+    - [**DEMO**](./demo/demo_background_subtraction.ipynb): Background subtraction on Airport dataset [Li+04] including comparison to RPCA [Candes+09].
     - [Takeda, K., & Sakai, T., "Unsupervised deep learning of foreground objects from low-rank and sparse dataset,"  Computer Vision and Image Understanding, 240, 103939, January 2024.](https://doi.org/10.1016/j.cviu.2024.103939)   This article discusses DeepLS's application in various domains, including background subtraction in video surveillance and cell segmentation in microscopy images.
     - [Takeda, K., Fujiwara, K., & Sakai, T., "Unsupervised deep learning for online foreground segmentation exploiting low-rank and sparse priors," International Conference on Digital Image Computing: Techniques and Applications (DICTA) Proceedings, pp. 1-7, November 2022.](https://doi.org/10.1109/DICTA56598.2022.10034581)  This paper presents a method for unsupervised deep learning for online foreground segmentation using a U-Net-based model that leverages the low-rank and sparse nature of foreground objects and backgrounds. 
 
 
 *   **Background bias removal from cytology images:** DeepLS can mitigate the impact of spurious features, such as those arising from slide deterioration, in cytological image analysis. By effectively removing background information, DeepLS allows for more accurate cell classification based on cellular features rather than background artifacts. For example, DeepLS successfully removed background from Pap-stained oral cytology images, improving the accuracy of classifying normal and abnormal cells.
 
+    - [**DEMO**](./demo/demo_cell_segmentation.ipynb): Cell segmentation on [ISBI 2014 dataset](https://cs.adelaide.edu.au/~carneiro/isbi14_challenge/) incorporating [anisotropic total variation](https://en.wikipedia.org/wiki/Total_variation_denoising) in the loss function.
     - [Takeda, K., Sakai, T., & Mitate, E., "Background removal for debiasing computer-aided cytological diagnosis," International Journal of Computer Assisted Radiology and Surgery, June 2024.](https://doi.org/10.1007/s11548-024-03169-0)  This article focuses on the problem of background bias in computer-aided cytology and presents DeepLS as a solution. The authors demonstrate the method's effectiveness in debiasing by showing its success in removing background from oral cytology images.
     - [Takeda, K., Mitate, E., & Sakai, T., "Background subtraction approach to unsupervised cell segmentation: Toward excluding spurious features in degraded cytology slides," IEEE 20th International Symposium on Biomedical Imaging (ISBI) Proceedings, pp. 1-5, April 2023.](https://doi.org/10.1109/ISBI53787.2023.10230323)  This paper discusses the application of DeepLS for cell segmentation, particularly in addressing the issue of spurious features in degraded cytology slides.
 
@@ -26,6 +31,7 @@ Notably, once trained, the DeepLS model gains the capacity to extract learned sp
 
 
 
+<!--
 
 ## available codes
 [demo programs](./demo)
@@ -57,4 +63,4 @@ Low-rank and sparse loss:
   doi={10.1109/DICTA56598.2022.10034581}}
 ```
 
-
+-->
