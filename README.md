@@ -7,9 +7,7 @@ Notably, once trained, the DeepLS model gains the capacity to extract learned sp
 
 ![](model_architecture.png)
 
-## Applications
-[demo programs](./demo)
-
+## Applications and [code samples](./demo)
 
 
 *   **Learning foreground objects from surveillance video**: DeepLS can effectively learn and separate foreground objects from the background in video surveillance tasks, even with changes in viewpoints or background conditions. Once trained on a set of images, the DeepLS model can detect the learned foreground objects in new images without retraining. This is a significant advantage over traditional methods like RPCA, which require recomputation for each new image.
