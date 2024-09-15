@@ -1,10 +1,9 @@
-# DeepLS
-This repository proposes unsupervised deep learning exploiting low-rank and sparse priors of dataset.
-Robust principal component analysis (RPCA) can achieve background subtraction by minimizing nuclear and $\ell_1$ norms to exploit the prior knowledge about spatio-temporal sparseness and low-rankness of the foreground objects and background scene.
-With a combination of these norms as a loss function, the proposed method trains a U-Net-based model so as to encode and decode the sparse foreground objects for a batch of input images with a low-rank background.
-Once the model has learned enough features common to the foreground objects, it has the potential to detect them from any single image regardless of the low-rankness and sparseness.
-The proposed model performs online object segmentation with much less computational expense than that of RPCA.
-Our method can build up a well-generalized model from only a few dozen of unannotated training images.
+## DeepLS
+
+*DeepLS* is a novel unsupervised deep learning approach designed for online separation of sparse signal components. This method leverages the low-rank and sparse priors inherent in datasets for training purposes. It utilizes a U-Net-based model, structured similarly to an hourglass, which efficiently encodes and decodes sparse components. During training, the model employs a loss function based on a combination of nuclear and $\ell_1$ norms, mirroring the objective function of Robust Principal Component Analysis (RPCA). This approach encourages the model to discern and isolate the sparse components within the input data. 
+
+Notably, once trained, the DeepLS model gains the capacity to extract learned sparse components from a diverse range of inputs, not limited to those exhibiting low-rank characteristics. This capability eliminates the need for retraining the model for varying backgrounds, leading to computationally efficient online separation of target signals that share features with the learned sparse components from the training dataset.
+
 
 ![](model_architecture.png)
 
