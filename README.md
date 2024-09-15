@@ -25,7 +25,7 @@ Notably, once trained, the DeepLS model gains the capacity to extract learned sp
 
 
 *   **Signal separation of anomalous sounds from spectrograms:** While the provided sources don't directly apply the DeepLS framework to audio data, the same underlying principle of low-rank and sparse decomposition is applicable for signal separation. This suggests the potential of DeepLS for extracting anomalous sounds, such as wheezes or rhonchi, from spectrograms. These sounds often exhibit sparsity compared to the more redundant breath sounds, making them suitable targets for DeepLS-based separation.
-    - [Onomichi, T., Sakai, T., & Obase, Y., "Unsupervised deep learning of sparse signals against low-rank backgrounds with application to online lung sound separation," International Journal of Signal Processing Systems, vol. 11, no. 1, pp. 1-6, March 2023.](https://doi.org/10.18178/ijsps.11.1.1-6)  This paper details a method for separating sparse signals from mixtures with low-rank backgrounds. The authors highlight its application in online lung sound separation.
+    - [Onomichi, T., Sakai, T., & Obase, Y., "Unsupervised deep learning of sparse signals against low-rank backgrounds with application to online lung sound separation," International Journal of Signal Processing Systems, vol. 11, no. 1, pp. 1-6, March 2023.](https://doi.org/10.18178/ijsps.11.1.1-6)  This paper details the use of DeepLS for separating sparse signals from mixtures with low-rank backgrounds. The authors highlight its application in online lung sound separation.
 
 
 
